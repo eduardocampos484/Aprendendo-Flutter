@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.green,
       ),
-      home: const MyHomePage(title: 'Frases do Motivacionais'),
+      home: const MyHomePage(title: 'Frases Motivacionais'),
     );
   }
 }
@@ -30,7 +30,7 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   int _numeroAleatorio = 0;
-  List _frases = [
+  final List _frases = [
     'O importante não é vencer todos os dias, mas lutar sempre.',
     'É melhor conquistar a si mesmo do que vencer mil batalhas.',
     'O medo de perder tira a vontade de ganhar.',
@@ -43,7 +43,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   void _incrementCounter() {
     setState(() {
-      _numeroAleatorio = new Random()
+      _numeroAleatorio = Random()
           .nextInt(8); //Gera um numero ou palavras aleatórias 0, 1, 2, 3...
     });
   }
