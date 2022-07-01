@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.green,
       ),
-      home: const MyHomePage(title: 'Frases do Dia'),
+      home: const MyHomePage(title: 'Frases do Motivacionais'),
     );
   }
 }
@@ -38,7 +38,7 @@ class _MyHomePageState extends State<MyHomePage> {
     'Nunca duvide porque sua força vem de Deus.',
     'Você está mais perto que imagina! Não perca o fôlego agora!',
     'Cada passo que você dá você fica mais perto do seu objetivo!',
-    'Vá em frente! Você sabe que não pode parar agora!'
+    'Vá em frente! Você sabe que não pode parar agora.'
   ];
 
   void _incrementCounter() {
